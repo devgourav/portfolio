@@ -28,9 +28,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: black;
+    color: var(--text);
     font-size: 1.4rem;
     padding: 4rem 0;
+    background-color: var(--white);
   }
 
   .header_text {

@@ -10,6 +10,10 @@
   @import url("https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@700&display=swap");
   @import url("https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap");
 
+  :global(html) {
+    scroll-behavior: smooth;
+  }
+
   :global(body) {
     margin: 0px;
     padding: 0px;
@@ -17,11 +21,14 @@
   }
 
   :global(:root) {
-    --charcoal: #264653ff;
-    --persian-green: #2a9d8fff;
-    --orange-yellow-crayola: #e9c46aff;
-    --sandy-brown: #f4a261ff;
-    --burnt-sienna: #e76f51ff;
+    --background: #232946;
+    --paragraph: #b8c1ec;
+    --headline: #fffffe;
+    --button: #ffb0bc;
+    --text: #232946;
+
+    --light-background: #d4d8f0;
+    --white: #fffffe;
   }
 
   :global(input, textarea) {
@@ -38,26 +45,26 @@
   }
 
   :global(.solid-btn) {
-    background-color: var(--persian-green);
-    color: white;
-    border: 2px solid var(--persian-green);
+    background-color: var(--button);
+    color: var(--text);
+    border: 2px solid var(--button);
   }
 
   :global(.solid-btn:hover) {
-    background-color: white;
-    color: var(--persian-green);
-    border: 2px solid var(--persian-green);
+    background-color: var(--white);
+    color: var(--text);
+    border: 2px solid var(--button);
   }
 
   :global(.border-btn) {
-    background-color: white;
-    color: 2px solid var(--persian-green);
-    border: 2px solid var(--persian-green);
+    background-color: var(--white);
+    color: 2px solid var(--button);
+    border: 2px solid var(--button);
   }
 
   :global(.border-btn:hover) {
     background-color: white;
-    color: 2px solid var(--persian-green);
-    border: 2px solid var(--persian-green);
+    color: 2px solid var(--button);
+    border: 2px solid var(--button);
   }
 </style>

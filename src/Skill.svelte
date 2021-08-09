@@ -6,15 +6,20 @@
   <div class="content">
     <div class="skill_text">
       <p>
-        Since my beginning my journey as a developer in 2014 I have done work
-        for MNC, for startups and also worked as a freelance developer
-        collaborating with Indian as well as a Foreign clients and collegues.
+        Since beginning my journey as a developer in 2014 I have worked for a
+        MNC, for startups and also as a freelancer collaborating with Indian as
+        well as a Foreign clients and collegues.
       </p>
       <p>
-        I have a worked in various roles and worn various hats of backend,
-        frontend and fullstack developer working on languages such a Java,
-        Python, Javascript, Node.js, Angular2+ etc. Currently I am work as a
-        Senior Frontend developer.
+        I have worked in many roles as backend, frontend and fullstack developer
+        working on languages such a Java, Python, Javascript, Node.js, Angular2+
+        etc. I also have experience in AWS cloud.Currently I am working as a
+        Senior Frontend developer for <a
+          href="https://www.engagely.ai/"
+          class="highlight"
+        >
+          Engagely.ai</a
+        >
       </p>
     </div>
     <div class="skill_list">
@@ -51,43 +56,43 @@
 
 <style>
   .skill {
-    background-color: var(--charcoal);
-    height: 100vh;
+    background-color: var(--light-background);
+    height: 60vh;
     font-size: 1.4rem;
     padding: 4rem 0;
-
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
+    color: var(--text);
   }
 
   progress {
     width: 20rem;
     height: 8px;
-    background-color: var(--burnt-sienna);
-    border: none;
+    background-color: var(--white);
+    border: 0;
     border-radius: 6px;
   }
   progress::-webkit-progress-bar {
     width: 20rem;
     height: 8px;
-    background-color: var(--burnt-sienna);
-    border: none;
+    background-color: var(--white);
+    border: 0;
     border-radius: 6px;
   }
   progress::-webkit-progress-value {
     width: 20rem;
     height: 8px;
-    background-color: var(--burnt-sienna);
-    border: none;
+    background-color: var(--button);
+    border: 0;
     border-radius: 6px;
   }
   progress::-moz-progress-bar {
     width: 20rem;
     height: 8px;
-    background-color: var(--burnt-sienna);
-    border: none;
+    background-color: var(--white);
+    border: 0;
     border-radius: 6px;
   }
 
@@ -98,6 +103,7 @@
   .skill_list {
     justify-self: end;
     font-size: 1.2rem;
+    margin-top: 2rem;
   }
   .content {
     display: grid;
@@ -112,5 +118,9 @@
     font-size: 2.5rem;
     max-width: 900px;
     text-align: center;
+  }
+
+  p {
+    margin: 2rem 0;
   }
 </style>
