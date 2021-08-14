@@ -3,7 +3,7 @@
   import Contact from "./Contact.svelte";
   import Skill from "./Skill.svelte";
   let myImage = "assets/avatar_nobg.png";
-  let angularImg = "assets/logo-nav@2x.png";
+  let resume = "assets/Debadutta_Gourav_Resume.pdf";
 </script>
 
 <div class="page-container">
@@ -25,7 +25,9 @@
     <div class="btn-container">
       <a href="#contact"> <button class="solid-btn">Contact</button></a>
 
-      <button class="solid-btn">Resume</button>
+      <a href={resume} download>
+        <button class="solid-btn">Resume</button>
+      </a>
     </div>
   </div>
 

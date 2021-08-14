@@ -3,24 +3,36 @@
   let linkedIn = "assets/linkedin.png";
 </script>
 
-<div class="header-container">
-  <div class="social-container">
-    <img src={twitter} alt="Twitter logo" />
-    <img src={linkedIn} alt="Linkedin logo" />
+<div class="social-container">
+  <div class="social-links">
+    <a href="https://twitter.com/devgrv">
+      <img src={twitter} alt="Twitter logo" /></a
+    >
+
+    <a href="https://www.linkedin.com/in/devgrv/">
+      <img src={linkedIn} alt="Linkedin logo" />
+    </a>
+  </div>
+  <div class="love">
+    Made with love ❤️ in <a href="https://svelte.dev/"> Svelte </a>by myself.
   </div>
 </div>
 
 <style>
-  .header-container {
-    padding: 1rem 0;
-  }
   .social-container {
+    background-color: var(--light-background);
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+    padding: 3rem 0;
   }
   .social-container img {
     width: 32px;
-    padding: 0 0.5rem;
     cursor: pointer;
+    margin: 0 0.5rem;
+  }
+  .love {
+    margin-top: 1rem;
   }
 </style>
