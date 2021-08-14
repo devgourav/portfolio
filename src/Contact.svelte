@@ -1,14 +1,14 @@
 <script>
-  async function handleOnSubmit(e) {
-    let formData = new FormData(document.getElementById("contactForm"));
-    await fetch("/", {
-      method: "POST",
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: new URLSearchParams(formData).toString(),
-    })
-      .then(() => console.log("Form successfully submitted"))
-      .catch((error) => alert(error));
-  }
+  // async function handleOnSubmit(e) {
+  //   let formData = new FormData(document.getElementById("contactForm"));
+  //   await fetch("/", {
+  //     method: "POST",
+  //     headers: { "Content-Type": "application/x-www-form-urlencoded" },
+  //     body: new URLSearchParams(formData).toString(),
+  //   })
+  //     .then(() => console.log("Form successfully submitted"))
+  //     .catch((error) => alert(error));
+  // }
 </script>
 
 <div class="contact">
@@ -21,7 +21,6 @@
     name="contact"
     data-netlify="true"
     data-netlify-honeypot="bot-field"
-    on:submit|preventDefault={handleOnSubmit}
   >
     <div class="form">
       <input type="hidden" name="form-name" value="contact" />
