@@ -20,6 +20,10 @@
     font-family: "Fira Sans", sans-serif;
   }
 
+  :global(ul) {
+    padding: 0px;
+  }
+
   :global(:root) {
     --background: #232946;
     --paragraph: #b8c1ec;

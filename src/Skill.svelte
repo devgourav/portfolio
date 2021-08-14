@@ -110,7 +110,7 @@
     grid-template-columns: 50% 50%;
     justify-content: space-between;
     grid-gap: 10px;
-    width: 900px;
+    max-width: 900px;
     margin-top: 3rem;
   }
 
@@ -122,5 +122,21 @@
 
   p {
     margin: 2rem 0;
+  }
+  @media screen and (max-width: 760px) {
+    .content {
+      grid-template-columns: 1fr;
+      justify-content: center;
+      max-width: 760px;
+      padding: 1rem;
+    }
+
+    .skill_list {
+      justify-self: center;
+    }
+
+    .skill {
+      height: auto;
+    }
   }
 </style>

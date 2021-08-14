@@ -4,6 +4,9 @@
   import Skill from "./Skill.svelte";
   let myImage = "assets/avatar_nobg.png";
   let resume = "assets/Debadutta_Gourav_Resume.pdf";
+  let download = "assets/download.png";
+
+  const scrollToBottom = () => window.scrollTo(0, document.body.scrollHeight);
 </script>
 
 <div class="page-container">
@@ -23,10 +26,13 @@
     </div>
 
     <div class="btn-container">
-      <a href="#contact"> <button class="solid-btn">Contact</button></a>
+      <button class="solid-btn" on:click={scrollToBottom}>Contact</button>
 
       <a href={resume} download>
-        <button class="solid-btn">Resume</button>
+        <button class="solid-btn download-btn">
+          <span>Resume</span>
+          <img src={download} alt="Download Resume" />
+        </button>
       </a>
     </div>
   </div>
@@ -101,5 +107,25 @@
     max-width: 400px;
     position: relative;
     top: 10px;
+  }
+
+  .download-btn img {
+    object-fit: contain;
+    max-width: 16px;
+  }
+
+  @media screen and (max-width: 760px) {
+    .text-container {
+      line-height: 2.5rem;
+      text-align: center;
+    }
+
+    .landing-container {
+      height: auto;
+    }
+
+    .avatar {
+      max-width: 300px;
+    }
   }
 </style>
