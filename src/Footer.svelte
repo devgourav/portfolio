@@ -6,11 +6,11 @@
 <div class="social-container">
   <div class="social-links">
     <a href="https://twitter.com/devgrv">
-      <img src={twitter} alt="Twitter logo" /></a
+      <img id="twitterLogo" src={twitter} alt="Twitter logo" /></a
     >
 
     <a href="https://www.linkedin.com/in/devgrv/">
-      <img src={linkedIn} alt="Linkedin logo" />
+      <img id="linkedLogo" src={linkedIn} alt="Linkedin logo" />
     </a>
   </div>
   <div class="love">

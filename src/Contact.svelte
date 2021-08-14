@@ -4,23 +4,29 @@
   <div class="header_text">
     Thanks for taking the time to reach out. How can I help you today?
   </div>
-  <div class="form">
-    <div class="name_input">
-      <label for="">Name</label>
-      <input type="text" id="name" />
-    </div>
 
-    <div class="email_input">
-      <label for="">Email</label>
-      <input type="text" id="email" />
-    </div>
+  <form name="contact" method="POST" netlify>
+    <div class="form">
+      <input type="hidden" name="form-name" value="contact" />
 
-    <div class="msg_input">
-      <label for="message">Message</label>
-      <textarea name="message" id="message" rows="6" />
+      <div class="name_input">
+        <label for="">Name</label>
+        <input type="text" id="name" name="name" />
+      </div>
+
+      <div class="email_input">
+        <label for="">Email</label>
+        <input type="text" id="email" name="email" />
+      </div>
+
+      <div class="msg_input">
+        <label for="message">Message</label>
+        <textarea name="message" id="message" rows="6" />
+      </div>
+
+      <button type="submit" class="solid-btn">Submit</button>
     </div>
-  </div>
-  <button class="solid-btn">Submit</button>
+  </form>
 </div>
 
 <style>
@@ -59,6 +65,12 @@
   .msg_input {
     grid-row: 2;
     grid-column: 1/3;
+  }
+
+  .solid-btn {
+    grid-row: 3;
+    grid-column: 1/3;
+    justify-self: center;
   }
 
   label {
