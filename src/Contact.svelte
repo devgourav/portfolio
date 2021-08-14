@@ -1,13 +1,38 @@
-<script></script>
+<script>
+  async function handleOnSubmit(e) {
+    let formData = new FormData(document.getElementById("contactForm"));
+    await fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: new URLSearchParams(formData).toString(),
+    })
+      .then(() => console.log("Form successfully submitted"))
+      .catch((error) => alert(error));
+  }
+</script>
 
 <div class="contact">
   <div class="header_text">
     Thanks for taking the time to reach out. How can I help you today?
   </div>
 
-  <form name="contact" method="POST" netlify>
+  <form
+    id="contactForm"
+    name="contact"
+    data-netlify="true"
+    data-netlify-honeypot="bot-field"
+    on:submit|preventDefault={handleOnSubmit}
+  >
     <div class="form">
       <input type="hidden" name="form-name" value="contact" />
+
+      <p style="display: none;">
+        <label
+          >Don’t fill this out if you’re human: <input
+            name="bot-field"
+          /></label
+        >
+      </p>
 
       <div class="name_input">
         <label for="">Name</label>
