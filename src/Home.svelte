@@ -2,6 +2,7 @@
   import Footer from "./Footer.svelte";
   import Contact from "./Contact.svelte";
   import Skill from "./Skill.svelte";
+  import Projects from "./Projects.svelte";
   let myImage = "assets/avatar_nobg.png";
   let resume = "assets/Debadutta_Gourav_Resume.pdf";
   let download = "assets/download.png";
@@ -16,7 +17,7 @@
         <ul class="greeting">Hello, I am</ul>
         <ul class="name">Debadutta Gourav(Dev)</ul>
         <ul class="description">
-          Frontend Web Developer making projects on Angular
+          Frontend Web Developer making projects on Angular and Svelte
         </ul>
       </li>
     </div>
@@ -38,6 +39,8 @@
   </div>
 
   <Skill />
+
+  <Projects />
 
   <div id="contact">
     <Contact />

@@ -5,16 +5,16 @@
 
 <div class="social-container">
   <div class="social-links">
-    <a href="https://twitter.com/devgrv">
+    <a href="https://twitter.com/devgrv" target="_blank">
       <img id="twitterLogo" src={twitter} alt="Twitter logo" /></a
     >
 
-    <a href="https://www.linkedin.com/in/devgrv/">
+    <a href="https://www.linkedin.com/in/devgrv/" target="_blank">
       <img id="linkedLogo" src={linkedIn} alt="Linkedin logo" />
     </a>
   </div>
   <div class="love">
-    Made with love ❤️ in <a href="https://svelte.dev/"> Svelte </a>by myself.
+    Made with love ❤️ in <a href="https://svelte.dev/"> Svelte </a>.
   </div>
 </div>
 

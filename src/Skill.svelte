@@ -1,55 +1,35 @@
 <script></script>
 
 <div class="skill">
-  <div class="header_text">Skills & Experience</div>
+  <div class="header_text">About me</div>
 
   <div class="content">
     <div class="skill_text">
       <p>
-        Since beginning my journey as a developer in 2014 I have worked for a
-        MNC, for startups and also as a freelancer collaborating with Indian as
-        well as a Foreign clients and collegues.
+        Hello! My name is Dev and I enjoy creating things that live on the
+        internet. My interest in web development started back in 2012 when I
+        worked on my college's website. After which I started a web dev club in
+        my college.
       </p>
+
       <p>
-        I have worked in many roles as backend, frontend and fullstack developer
-        working on languages such a Java, Python, Javascript, Node.js, Angular2+
-        etc. I also have experience in AWS cloud.Currently I am working as a
-        Senior Frontend developer for <a
-          href="https://www.engagely.ai/"
-          class="highlight"
-        >
+        After that since 2014 I've had the privelege working at Infosys, as a
+        freelencer and a startup. Currently I am working as a Senior developer
+        for <a href="https://www.engagely.ai/" class="highlight">
           Engagely.ai</a
         >
       </p>
     </div>
     <div class="skill_list">
-      <div class="skill_ele">
-        <div class="skill_name">Angular (8.5/10)</div>
-        <div class="skill_rate">
-          <progress max="100" value="85" />
-        </div>
-      </div>
+      <div>Here are a few technologies I've been working with recently:</div>
 
-      <div class="skill_ele">
-        <div class="skill_name">Javascript/Typescript (8/10)</div>
-        <div class="skill_rate">
-          <progress max="100" value="80" />
-        </div>
-      </div>
-
-      <div class="skill_ele">
-        <div class="skill_name">HTML/CSS (8/10)</div>
-        <div class="skill_rate">
-          <progress max="100" value="80" />
-        </div>
-      </div>
-
-      <div class="skill_ele">
-        <div class="skill_name">Node.js (7/10)</div>
-        <div class="skill_rate">
-          <progress max="100" value="70" />
-        </div>
-      </div>
+      <ul>
+        <li>Angular(v2-v12)</li>
+        <li>JavaScript (ES6+)</li>
+        <li>Svelte</li>
+        <li>Python</li>
+        <li>Node.js</li>
+      </ul>
     </div>
   </div>
 </div>
@@ -67,7 +47,7 @@
     color: var(--text);
   }
 
-  progress {
+  /* progress {
     width: 20rem;
     height: 8px;
     background-color: var(--white);
@@ -94,15 +74,14 @@
     background-color: var(--white);
     border: 0;
     border-radius: 6px;
-  }
-
+  } */
+  /* 
   .skill_ele {
     margin-bottom: 2rem;
-  }
+  } */
 
   .skill_list {
     justify-self: end;
-    font-size: 1.2rem;
     margin-top: 2rem;
   }
   .content {
@@ -112,6 +91,7 @@
     grid-gap: 10px;
     max-width: 900px;
     margin-top: 3rem;
+    line-height: 2rem;
   }
 
   .header_text {
@@ -123,6 +103,23 @@
   p {
     margin: 2rem 0;
   }
+
+  ul {
+    list-style: none;
+    font-size: 1.2rem;
+  }
+
+  /* li {
+    margin: 8px 0px;
+  } */
+
+  li::before {
+    content: "▶";
+    color: #ffb0bc;
+    margin-right: 4px;
+    font-size: 0.9rem;
+  }
+
   @media screen and (max-width: 760px) {
     .content {
       grid-template-columns: 1fr;

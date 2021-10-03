@@ -52,12 +52,11 @@
     background-color: var(--button);
     color: var(--text);
     border: 2px solid var(--button);
+    transition: linear 0.4s;
   }
 
   :global(.solid-btn:hover) {
     background-color: var(--white);
-    color: var(--text);
-    border: 2px solid var(--button);
   }
 
   :global(.border-btn) {
@@ -68,7 +67,5 @@
 
   :global(.border-btn:hover) {
     background-color: white;
-    color: 2px solid var(--button);
-    border: 2px solid var(--button);
   }
 </style>

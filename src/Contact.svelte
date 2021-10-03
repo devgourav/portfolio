@@ -159,6 +159,7 @@
     font-size: 2.5rem;
     max-width: 900px;
     text-align: center;
+    padding: 0 1rem;
   }
   .form {
     max-width: 640px;
