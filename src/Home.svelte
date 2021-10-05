@@ -29,12 +29,12 @@
     <div class="btn-container">
       <button class="solid-btn" on:click={scrollToBottom}>Contact</button>
 
-      <a href={resume} download>
+<!--       <a href={resume} download>
         <button class="solid-btn download-btn">
           <span>Resume</span>
           <img src={download} alt="Download Resume" />
         </button>
-      </a>
+      </a> -->
     </div>
   </div>
 
