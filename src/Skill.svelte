@@ -13,11 +13,10 @@
       </p>
 
       <p>
-        After that since 2014 I've had the privelege working at Infosys, as a
-        freelencer and a startup. Currently I am working as a Senior developer
-        for <a href="https://www.engagely.ai/" class="highlight">
-          Engagely.ai</a
-        >
+        Since 2014 I have worked in various service and product based companies. 
+        Currently I am working as a Senior developer
+        for <a href="https://www.siemens-advanta.com/" class="highlight">
+          Siemens Advanta </a> in Pune, India.
       </p>
     </div>
     <div class="skill_list">
@@ -27,8 +26,8 @@
         <li>Angular(v2-v12)</li>
         <li>JavaScript (ES6+)</li>
         <li>Svelte</li>
-        <li>Python</li>
         <li>Node.js</li>
+        <li>Java</li>
       </ul>
     </div>
   </div>
