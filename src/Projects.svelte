@@ -29,6 +29,7 @@
           <div class="desc">
             {project.desc}
           </div>
+          Build With: {project.buildWith}
         </div>
       </div>
     {/each}
@@ -77,6 +78,7 @@
 
   .project-mid .desc {
     line-height: 1.5rem;
+    margin-bottom:1rem;
   }
 
   .folder {

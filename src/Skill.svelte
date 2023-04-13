@@ -23,11 +23,11 @@
       <div>Here are a few technologies I've been working with recently:</div>
 
       <ul>
-        <li>Angular(v2-v12)</li>
         <li>JavaScript (ES6+)</li>
+        <li>Golang</li>
+        <li>Angular(v2-v12)</li>
         <li>Svelte</li>
-        <li>Node.js</li>
-        <li>Java</li>
+        <li>AWS Cloud</li>
       </ul>
     </div>
   </div>

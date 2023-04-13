@@ -17,7 +17,7 @@
         <ul class="greeting">Hello, I am</ul>
         <ul class="name">Debadutta Gourav(Dev)</ul>
         <ul class="description">
-          Frontend Web Developer making projects on Angular and Svelte
+          Fullstack Web Developer making projects on Golang, AWS, Angular and Svelte
         </ul>
       </li>
     </div>
